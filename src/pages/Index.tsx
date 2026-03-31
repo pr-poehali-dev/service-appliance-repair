@@ -233,72 +233,117 @@ export default function Index() {
         )}
       </nav>
 
+      {/* INTRO */}
+      <section style={{
+        minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center",
+        background: "#050B18", position: "relative", overflow: "hidden",
+      }}>
+        <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse 70% 70% at 50% 50%, rgba(255,107,53,0.12) 0%, transparent 70%)", pointerEvents: "none" }} />
+        <div style={{ textAlign: "center", position: "relative", padding: "0 24px" }}>
+          <div style={{ fontSize: "clamp(13px, 2vw, 16px)", color: "rgba(255,255,255,0.4)", fontWeight: 600, letterSpacing: 6, textTransform: "uppercase", marginBottom: 24, fontFamily: "'Inter', sans-serif" }}>
+            Добро пожаловать
+          </div>
+          <h1 style={{ fontSize: "clamp(56px, 10vw, 140px)", fontWeight: 900, lineHeight: 1, letterSpacing: "-4px", marginBottom: 0 }}>
+            <span style={{ color: "#fff" }}>Дом</span>
+            <span style={{ background: "linear-gradient(135deg, #FF6B35, #FFD166)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Быта</span>
+          </h1>
+          <p style={{ color: "rgba(255,255,255,0.35)", fontSize: "clamp(15px, 2vw, 20px)", fontWeight: 400, marginTop: 28, fontFamily: "'Inter', sans-serif" }}>
+            Профессиональный ремонт бытовой техники
+          </p>
+          <button onClick={() => scroll("home")} style={{
+            marginTop: 52, padding: "16px 40px", borderRadius: 100, border: "none", cursor: "pointer",
+            background: "linear-gradient(135deg, #FF6B35, #FF8C42)", color: "#fff",
+            fontWeight: 800, fontSize: 16, fontFamily: "'Montserrat', sans-serif",
+            boxShadow: "0 8px 40px rgba(255,107,53,0.4)", display: "inline-flex", alignItems: "center", gap: 10,
+          }}>
+            Перейти на сайт
+            <Icon name="ArrowDown" size={18} />
+          </button>
+        </div>
+      </section>
+
       {/* HERO */}
-      <section id="home" style={{ minHeight: "100vh", display: "flex", alignItems: "center", position: "relative", overflow: "hidden", paddingTop: 64, background: "#050B18" }}>
-        <div style={{
-          position: "absolute", inset: 0,
-          background: "radial-gradient(ellipse 80% 60% at 60% 40%, rgba(255,107,53,0.12) 0%, transparent 60%), radial-gradient(ellipse 60% 60% at 20% 80%, rgba(59,130,246,0.08) 0%, transparent 60%)",
-        }} />
-        <div style={{ maxWidth: 1280, margin: "0 auto", padding: "80px 24px", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 60, alignItems: "center", width: "100%" }}>
-          <div>
-            <div style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "8px 16px", borderRadius: 100, background: "rgba(255,107,53,0.1)", border: "1px solid rgba(255,107,53,0.3)", marginBottom: 24 }}>
-              <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#FF6B35" }} />
-              <span style={{ color: "#FF6B35", fontSize: 13, fontWeight: 600 }}>Принимаем заявки 24/7</span>
-            </div>
-            <h1 style={{ fontSize: "clamp(32px, 4.5vw, 60px)", fontWeight: 900, color: "#fff", lineHeight: 1.1, marginBottom: 24, letterSpacing: "-1px" }}>
-              Ремонт бытовой<br />
-              <span style={{ background: "linear-gradient(90deg, #FF6B35, #FF8C42, #FFD166)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>техники</span>{" "}
-              в вашем городе
-            </h1>
-            <p style={{ color: "rgba(255,255,255,0.55)", fontSize: 17, lineHeight: 1.7, marginBottom: 40, fontWeight: 400, fontFamily: "'Inter', sans-serif" }}>
-              Стиральные машины, посудомойки, духовки, сушилки, бойлеры и плиты. Мастер приедет в течение 2 часов. Гарантия на все виды работ.
-            </p>
-            <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
-              <button onClick={() => scroll("booking")} style={{
-                padding: "16px 32px", borderRadius: 12, border: "none", cursor: "pointer",
-                background: "linear-gradient(135deg, #FF6B35, #FF8C42)",
-                color: "#fff", fontWeight: 800, fontSize: 16, fontFamily: "'Montserrat', sans-serif",
-                boxShadow: "0 8px 32px rgba(255,107,53,0.35)",
-              }}>Записаться на ремонт</button>
-              <button onClick={() => scroll("catalog")} style={{
-                padding: "16px 32px", borderRadius: 12, cursor: "pointer",
-                background: "transparent", border: "1px solid rgba(255,255,255,0.2)",
-                color: "#fff", fontWeight: 700, fontSize: 16, fontFamily: "'Montserrat', sans-serif",
-              }}>Смотреть каталог</button>
-            </div>
-            <div style={{ display: "flex", gap: 40, marginTop: 48, flexWrap: "wrap" }}>
-              {[
-                { val: "500+", label: "ремонтов в месяц" },
-                { val: "12", label: "мастеров в штате" },
-                { val: "98%", label: "довольных клиентов" },
-              ].map((s) => (
-                <div key={s.val}>
-                  <div style={{ fontSize: 30, fontWeight: 900, color: "#FF6B35" }}>{s.val}</div>
-                  <div style={{ fontSize: 12, color: "rgba(255,255,255,0.45)", fontFamily: "'Inter', sans-serif" }}>{s.label}</div>
-                </div>
-              ))}
-            </div>
+      <section id="home" style={{ minHeight: "100vh", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", position: "relative", overflow: "hidden", paddingTop: 80, paddingBottom: 80, background: "#FFFFFF" }}>
+        <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse 60% 50% at 50% 0%, rgba(255,107,53,0.06) 0%, transparent 60%)", pointerEvents: "none" }} />
+
+        <div style={{ textAlign: "center", maxWidth: 700, padding: "0 24px", position: "relative" }}>
+          <div style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "8px 18px", borderRadius: 100, background: "rgba(255,107,53,0.08)", border: "1px solid rgba(255,107,53,0.2)", marginBottom: 28 }}>
+            <div style={{ width: 7, height: 7, borderRadius: "50%", background: "#FF6B35" }} />
+            <span style={{ color: "#FF6B35", fontSize: 13, fontWeight: 600 }}>Принимаем заявки 24/7</span>
           </div>
 
-          <div style={{ position: "relative", display: "flex", justifyContent: "center" }}>
-            <div style={{ position: "absolute", inset: -40, background: "radial-gradient(circle, rgba(255,107,53,0.12) 0%, transparent 70%)", borderRadius: "50%", pointerEvents: "none" }} />
-            <img
-              src="https://cdn.poehali.dev/projects/c017acd1-2ea8-49b8-b121-a2d497c1ba1e/files/dadaf07d-5cba-45d9-809a-85a6848a3ac1.jpg"
-              alt="Мастер по ремонту техники"
-              style={{ width: "100%", maxWidth: 480, borderRadius: 24, position: "relative", objectFit: "cover", boxShadow: "0 24px 80px rgba(0,0,0,0.6)" }}
-            />
-            <div style={{
-              position: "absolute", bottom: 24, left: -10, background: "rgba(255,255,255,0.95)", backdropFilter: "blur(12px)",
-              border: "1px solid rgba(255,107,53,0.3)", borderRadius: 16, padding: "14px 20px",
-              display: "flex", alignItems: "center", gap: 12,
-            }}>
-              <div style={{ width: 40, height: 40, borderRadius: 10, background: "rgba(16,185,129,0.2)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20 }}>✅</div>
-              <div>
-                <div style={{ color: "#111827", fontWeight: 700, fontSize: 13 }}>Гарантия 6 месяцев</div>
-                <div style={{ color: "rgba(0,0,0,0.45)", fontSize: 11, fontFamily: "'Inter', sans-serif" }}>на все виды работ</div>
+          <h2 style={{ fontSize: "clamp(36px, 6vw, 72px)", fontWeight: 900, color: "#111827", lineHeight: 1.1, letterSpacing: "-2px", marginBottom: 20 }}>
+            Бытовая<br />
+            <span style={{ background: "linear-gradient(90deg, #FF6B35, #FF8C42)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>техника</span>
+          </h2>
+          <p style={{ color: "rgba(0,0,0,0.45)", fontSize: 17, lineHeight: 1.7, fontFamily: "'Inter', sans-serif", marginBottom: 56 }}>
+            Ремонтируем любую технику — быстро, с гарантией и без скрытых платежей
+          </p>
+        </div>
+
+        {/* Иконки техники */}
+        <div style={{ display: "flex", gap: 20, flexWrap: "wrap", justifyContent: "center", padding: "0 24px", position: "relative" }}>
+          {[
+            { emoji: "🫧", name: "Стиральная\nмашина", color: "#3B82F6", id: "washing" },
+            { emoji: "🍽️", name: "Посудомойка", color: "#06B6D4", id: "dishwasher" },
+            { emoji: "🔥", name: "Духовка", color: "#F97316", id: "oven" },
+            { emoji: "🌊", name: "Бойлер", color: "#10B981", id: "boiler" },
+            { emoji: "💨", name: "Сушилка", color: "#8B5CF6", id: "dryer" },
+            { emoji: "🍳", name: "Плита", color: "#EF4444", id: "stove" },
+          ].map((item) => (
+            <div key={item.id}
+              onClick={() => { setSelectedAppliance(item.id); scroll("issues"); }}
+              style={{
+                width: 140, padding: "28px 16px 24px", borderRadius: 24, cursor: "pointer",
+                background: "#fff", border: `1px solid rgba(0,0,0,0.07)`,
+                boxShadow: "0 4px 24px rgba(0,0,0,0.06)",
+                display: "flex", flexDirection: "column", alignItems: "center", gap: 14,
+                transition: "all 0.25s",
+              }}
+              onMouseEnter={e => {
+                (e.currentTarget as HTMLElement).style.transform = "translateY(-6px)";
+                (e.currentTarget as HTMLElement).style.boxShadow = `0 16px 40px ${item.color}22`;
+                (e.currentTarget as HTMLElement).style.borderColor = `${item.color}55`;
+              }}
+              onMouseLeave={e => {
+                (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
+                (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 24px rgba(0,0,0,0.06)";
+                (e.currentTarget as HTMLElement).style.borderColor = "rgba(0,0,0,0.07)";
+              }}>
+              <div style={{ width: 72, height: 72, borderRadius: 20, background: `${item.color}14`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 36 }}>
+                {item.emoji}
               </div>
+              <span style={{ color: "#111827", fontWeight: 700, fontSize: 13, textAlign: "center", lineHeight: 1.3, whiteSpace: "pre-line" }}>{item.name}</span>
+              <div style={{ width: 28, height: 3, borderRadius: 10, background: item.color, opacity: 0.6 }} />
             </div>
-          </div>
+          ))}
+        </div>
+
+        <div style={{ display: "flex", gap: 16, marginTop: 52, flexWrap: "wrap", justifyContent: "center", padding: "0 24px", position: "relative" }}>
+          <button onClick={() => scroll("booking")} style={{
+            padding: "15px 32px", borderRadius: 12, border: "none", cursor: "pointer",
+            background: "linear-gradient(135deg, #FF6B35, #FF8C42)", color: "#fff",
+            fontWeight: 800, fontSize: 15, fontFamily: "'Montserrat', sans-serif",
+            boxShadow: "0 8px 32px rgba(255,107,53,0.3)",
+          }}>Записаться на ремонт</button>
+          <button onClick={() => scroll("catalog")} style={{
+            padding: "15px 32px", borderRadius: 12, cursor: "pointer",
+            background: "transparent", border: "1px solid rgba(0,0,0,0.15)",
+            color: "#111827", fontWeight: 700, fontSize: 15, fontFamily: "'Montserrat', sans-serif",
+          }}>Смотреть каталог</button>
+        </div>
+
+        <div style={{ display: "flex", gap: 48, marginTop: 56, flexWrap: "wrap", justifyContent: "center", position: "relative" }}>
+          {[
+            { val: "500+", label: "ремонтов в месяц" },
+            { val: "12", label: "мастеров в штате" },
+            { val: "98%", label: "довольных клиентов" },
+          ].map((s) => (
+            <div key={s.val} style={{ textAlign: "center" }}>
+              <div style={{ fontSize: 30, fontWeight: 900, color: "#FF6B35" }}>{s.val}</div>
+              <div style={{ fontSize: 12, color: "rgba(0,0,0,0.4)", fontFamily: "'Inter', sans-serif" }}>{s.label}</div>
+            </div>
+          ))}
         </div>
       </section>
 
