@@ -190,7 +190,7 @@ export default function Index() {
           <div style={{ display: "flex", alignItems: "center", gap: 10, cursor: "pointer" }} onClick={() => scroll("home")}>
             <div style={{ width: 36, height: 36, borderRadius: 10, background: "linear-gradient(135deg, #FF6B35, #F7C59F)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18 }}>🔧</div>
             <span style={{ fontSize: 20, fontWeight: 800, color: "#111827", letterSpacing: "-0.5px" }}>
-              Мастер<span style={{ color: "#FF6B35" }}>Фикс</span>
+              Дом<span style={{ color: "#FF6B35" }}>Быта</span>
             </span>
           </div>
 
@@ -773,9 +773,9 @@ export default function Index() {
         <div style={{ maxWidth: 1280, margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 16 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
             <div style={{ width: 30, height: 30, borderRadius: 8, background: "linear-gradient(135deg, #FF6B35, #F7C59F)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 15 }}>🔧</div>
-            <span style={{ fontSize: 17, fontWeight: 800, color: "#fff" }}>Мастер<span style={{ color: "#FF6B35" }}>Фикс</span></span>
+            <span style={{ fontSize: 17, fontWeight: 800, color: "#fff" }}>Дом<span style={{ color: "#FF6B35" }}>Быта</span></span>
           </div>
-          <p style={{ color: "rgba(255,255,255,0.25)", fontSize: 13, fontFamily: "'Inter', sans-serif" }}>© 2026 МастерФикс. Профессиональный ремонт бытовой техники.</p>
+          <p style={{ color: "rgba(255,255,255,0.25)", fontSize: 13, fontFamily: "'Inter', sans-serif" }}>© 2026 ДомБыта. Профессиональный ремонт бытовой техники.</p>
           <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
             {navItems.slice(0, 5).map(item => (
               <button key={item.id} onClick={() => scroll(item.id)} style={{
