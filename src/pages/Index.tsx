@@ -267,11 +267,6 @@ export default function Index() {
         <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse 60% 50% at 50% 0%, rgba(255,107,53,0.06) 0%, transparent 60%)", pointerEvents: "none" }} />
 
         <div style={{ textAlign: "center", maxWidth: 700, padding: "0 24px", position: "relative" }}>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "8px 18px", borderRadius: 100, background: "rgba(255,107,53,0.08)", border: "1px solid rgba(255,107,53,0.2)", marginBottom: 28 }}>
-            <div style={{ width: 7, height: 7, borderRadius: "50%", background: "#FF6B35" }} />
-            <span style={{ color: "#FF6B35", fontSize: 13, fontWeight: 600 }}>Принимаем заявки 24/7</span>
-          </div>
-
           <h2 style={{ fontSize: "clamp(36px, 6vw, 72px)", fontWeight: 900, color: "#111827", lineHeight: 1.1, letterSpacing: "-2px", marginBottom: 20 }}>
             Бытовая<br />
             <span style={{ background: "linear-gradient(90deg, #FF6B35, #FF8C42)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>техника</span>
