@@ -1,6 +1,39 @@
 import { useState } from "react";
 import Icon from "@/components/ui/icon";
 
+const WASHING_BRANDS = [
+  { name: "Samsung", country: "Корея" },
+  { name: "LG", country: "Корея" },
+  { name: "Bosch", country: "Германия" },
+  { name: "Siemens", country: "Германия" },
+  { name: "Indesit", country: "Италия" },
+  { name: "Hotpoint", country: "Италия" },
+  { name: "Whirlpool", country: "США" },
+  { name: "Electrolux", country: "Швеция" },
+  { name: "AEG", country: "Германия" },
+  { name: "Miele", country: "Германия" },
+  { name: "Zanussi", country: "Италия" },
+  { name: "Candy", country: "Италия" },
+  { name: "Haier", country: "Китай" },
+  { name: "Beko", country: "Турция" },
+  { name: "Ariston", country: "Италия" },
+  { name: "Gorenje", country: "Словения" },
+  { name: "Hisense", country: "Китай" },
+  { name: "Panasonic", country: "Япония" },
+  { name: "Sharp", country: "Япония" },
+  { name: "Hitachi", country: "Япония" },
+  { name: "Vestel", country: "Турция" },
+  { name: "TCL", country: "Китай" },
+  { name: "Midea", country: "Китай" },
+  { name: "Daewoo", country: "Корея" },
+  { name: "Kaiser", country: "Германия" },
+  { name: "Atlant", country: "Беларусь" },
+  { name: "Asko", country: "Швеция" },
+  { name: "Smeg", country: "Италия" },
+  { name: "V-ZUG", country: "Швейцария" },
+  { name: "Bauknecht", country: "Германия" },
+];
+
 const APPLIANCES = [
   {
     id: "washing",
@@ -387,6 +420,45 @@ export default function Index() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Бренды стиральных машин */}
+          <div style={{ marginTop: 60 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 28 }}>
+              <div style={{ width: 44, height: 44, borderRadius: 12, background: "#3B82F615", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 22 }}>🫧</div>
+              <div>
+                <h3 style={{ color: "#111827", fontWeight: 800, fontSize: 20, margin: 0 }}>Стиральные машины</h3>
+                <p style={{ color: "rgba(0,0,0,0.4)", fontSize: 13, margin: 0, fontFamily: "'Inter', sans-serif" }}>30 брендов — ремонтируем все</p>
+              </div>
+            </div>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(160px, 1fr))", gap: 12 }}>
+              {WASHING_BRANDS.map((b, idx) => (
+                <div key={idx}
+                  onClick={() => { setSelectedAppliance("washing"); scroll("issues"); }}
+                  style={{
+                    padding: "14px 18px", borderRadius: 14, cursor: "pointer",
+                    background: "#fff", border: "1px solid rgba(0,0,0,0.08)",
+                    display: "flex", alignItems: "center", justifyContent: "space-between",
+                    transition: "all 0.2s",
+                  }}
+                  onMouseEnter={e => {
+                    (e.currentTarget as HTMLElement).style.borderColor = "#3B82F655";
+                    (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)";
+                    (e.currentTarget as HTMLElement).style.boxShadow = "0 6px 20px rgba(59,130,246,0.12)";
+                  }}
+                  onMouseLeave={e => {
+                    (e.currentTarget as HTMLElement).style.borderColor = "rgba(0,0,0,0.08)";
+                    (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
+                    (e.currentTarget as HTMLElement).style.boxShadow = "none";
+                  }}>
+                  <div>
+                    <div style={{ color: "#111827", fontWeight: 700, fontSize: 14 }}>{b.name}</div>
+                    <div style={{ color: "rgba(0,0,0,0.35)", fontSize: 11, fontFamily: "'Inter', sans-serif" }}>{b.country}</div>
+                  </div>
+                  <Icon name="Wrench" size={14} style={{ color: "#3B82F6", flexShrink: 0 }} />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
