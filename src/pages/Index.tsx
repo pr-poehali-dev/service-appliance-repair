@@ -272,7 +272,7 @@ export default function Index() {
             <span style={{ background: "linear-gradient(90deg, #FF6B35, #FF8C42)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>техника</span>
           </h2>
           <p style={{ color: "rgba(0,0,0,0.45)", fontSize: 17, lineHeight: 1.7, fontFamily: "'Inter', sans-serif", marginBottom: 56 }}>
-            Ремонтируем любую технику — быстро, с гарантией и без скрытых платежей
+            Выбери технику, которая у тебя сломалась, и узнай как её починить
           </p>
         </div>
 
