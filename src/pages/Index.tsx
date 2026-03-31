@@ -236,18 +236,18 @@ export default function Index() {
       {/* INTRO */}
       <section style={{
         minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center",
-        background: "#050B18", position: "relative", overflow: "hidden",
+        background: "#FFFFFF", position: "relative", overflow: "hidden",
       }}>
-        <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse 70% 70% at 50% 50%, rgba(255,107,53,0.12) 0%, transparent 70%)", pointerEvents: "none" }} />
+        <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse 70% 70% at 50% 50%, rgba(255,107,53,0.07) 0%, transparent 70%)", pointerEvents: "none" }} />
         <div style={{ textAlign: "center", position: "relative", padding: "0 24px" }}>
-          <div style={{ fontSize: "clamp(13px, 2vw, 16px)", color: "rgba(255,255,255,0.4)", fontWeight: 600, letterSpacing: 6, textTransform: "uppercase", marginBottom: 24, fontFamily: "'Inter', sans-serif" }}>
+          <div style={{ fontSize: "clamp(13px, 2vw, 16px)", color: "rgba(0,0,0,0.35)", fontWeight: 600, letterSpacing: 6, textTransform: "uppercase", marginBottom: 24, fontFamily: "'Inter', sans-serif" }}>
             Добро пожаловать
           </div>
           <h1 style={{ fontSize: "clamp(56px, 10vw, 140px)", fontWeight: 900, lineHeight: 1, letterSpacing: "-4px", marginBottom: 0 }}>
-            <span style={{ color: "#fff" }}>Дом</span>
+            <span style={{ color: "#111827" }}>Дом</span>
             <span style={{ background: "linear-gradient(135deg, #FF6B35, #FFD166)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Быта</span>
           </h1>
-          <p style={{ color: "rgba(255,255,255,0.35)", fontSize: "clamp(15px, 2vw, 20px)", fontWeight: 400, marginTop: 28, fontFamily: "'Inter', sans-serif" }}>
+          <p style={{ color: "rgba(0,0,0,0.4)", fontSize: "clamp(15px, 2vw, 20px)", fontWeight: 400, marginTop: 28, fontFamily: "'Inter', sans-serif" }}>
             Профессиональный ремонт бытовой техники
           </p>
           <button onClick={() => scroll("home")} style={{
