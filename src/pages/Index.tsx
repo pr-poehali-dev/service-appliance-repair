@@ -34,6 +34,180 @@ const WASHING_BRANDS = [
   { name: "Bauknecht", country: "Германия" },
 ];
 
+const DISHWASHER_BRANDS = [
+  { name: "Bosch", country: "Германия" },
+  { name: "Siemens", country: "Германия" },
+  { name: "Miele", country: "Германия" },
+  { name: "AEG", country: "Германия" },
+  { name: "Electrolux", country: "Швеция" },
+  { name: "Samsung", country: "Корея" },
+  { name: "LG", country: "Корея" },
+  { name: "Indesit", country: "Италия" },
+  { name: "Ariston", country: "Италия" },
+  { name: "Zanussi", country: "Италия" },
+  { name: "Candy", country: "Италия" },
+  { name: "Smeg", country: "Италия" },
+  { name: "Whirlpool", country: "США" },
+  { name: "Beko", country: "Турция" },
+  { name: "Vestel", country: "Турция" },
+  { name: "Gorenje", country: "Словения" },
+  { name: "Haier", country: "Китай" },
+  { name: "Midea", country: "Китай" },
+  { name: "Hisense", country: "Китай" },
+  { name: "Hotpoint", country: "Италия" },
+  { name: "Neff", country: "Германия" },
+  { name: "Gaggenau", country: "Германия" },
+  { name: "Asko", country: "Швеция" },
+  { name: "V-ZUG", country: "Швейцария" },
+  { name: "Bauknecht", country: "Германия" },
+  { name: "Kaiser", country: "Германия" },
+  { name: "Krona", country: "Россия" },
+  { name: "Kuppersberg", country: "Германия" },
+  { name: "De Dietrich", country: "Франция" },
+  { name: "Fagor", country: "Испания" },
+];
+
+const OVEN_BRANDS = [
+  { name: "Bosch", country: "Германия" },
+  { name: "Siemens", country: "Германия" },
+  { name: "Miele", country: "Германия" },
+  { name: "AEG", country: "Германия" },
+  { name: "Neff", country: "Германия" },
+  { name: "Gaggenau", country: "Германия" },
+  { name: "Electrolux", country: "Швеция" },
+  { name: "Samsung", country: "Корея" },
+  { name: "LG", country: "Корея" },
+  { name: "Indesit", country: "Италия" },
+  { name: "Ariston", country: "Италия" },
+  { name: "Zanussi", country: "Италия" },
+  { name: "Candy", country: "Италия" },
+  { name: "Smeg", country: "Италия" },
+  { name: "Gorenje", country: "Словения" },
+  { name: "Beko", country: "Турция" },
+  { name: "Hansa", country: "Германия" },
+  { name: "Hotpoint", country: "Италия" },
+  { name: "Whirlpool", country: "США" },
+  { name: "De Dietrich", country: "Франция" },
+  { name: "Kaiser", country: "Германия" },
+  { name: "Kuppersberg", country: "Германия" },
+  { name: "Krona", country: "Россия" },
+  { name: "Haier", country: "Китай" },
+  { name: "Midea", country: "Китай" },
+  { name: "Gefest", country: "Беларусь" },
+  { name: "Darina", country: "Россия" },
+  { name: "Lex", country: "Россия" },
+  { name: "Pyramida", country: "Германия" },
+  { name: "Electronicsdeluxe", country: "Россия" },
+];
+
+const BOILER_BRANDS = [
+  { name: "Ariston", country: "Италия" },
+  { name: "Bosch", country: "Германия" },
+  { name: "Siemens", country: "Германия" },
+  { name: "Electrolux", country: "Швеция" },
+  { name: "AEG", country: "Германия" },
+  { name: "Thermex", country: "Россия" },
+  { name: "Gorenje", country: "Словения" },
+  { name: "Zanussi", country: "Италия" },
+  { name: "Haier", country: "Китай" },
+  { name: "Timberk", country: "Швеция" },
+  { name: "Garanterm", country: "Россия" },
+  { name: "Baxi", country: "Италия" },
+  { name: "Ferroli", country: "Италия" },
+  { name: "Vaillant", country: "Германия" },
+  { name: "Buderus", country: "Германия" },
+  { name: "Stiebel Eltron", country: "Германия" },
+  { name: "Drazice", country: "Чехия" },
+  { name: "Metalac", country: "Сербия" },
+  { name: "Polaris", country: "Россия" },
+  { name: "Scarlett", country: "Россия" },
+  { name: "Redmond", country: "Россия" },
+  { name: "Hyundai", country: "Корея" },
+  { name: "Wester", country: "Россия" },
+  { name: "Regent", country: "Китай" },
+  { name: "Ballu", country: "Россия" },
+  { name: "Tesy", country: "Болгария" },
+  { name: "Pacific", country: "Россия" },
+  { name: "Stadler Form", country: "Швейцария" },
+  { name: "Gorenje", country: "Словения" },
+  { name: "Viessmann", country: "Германия" },
+];
+
+const DRYER_BRANDS = [
+  { name: "Bosch", country: "Германия" },
+  { name: "Siemens", country: "Германия" },
+  { name: "Miele", country: "Германия" },
+  { name: "AEG", country: "Германия" },
+  { name: "Electrolux", country: "Швеция" },
+  { name: "Samsung", country: "Корея" },
+  { name: "LG", country: "Корея" },
+  { name: "Indesit", country: "Италия" },
+  { name: "Ariston", country: "Италия" },
+  { name: "Candy", country: "Италия" },
+  { name: "Hotpoint", country: "Италия" },
+  { name: "Zanussi", country: "Италия" },
+  { name: "Beko", country: "Турция" },
+  { name: "Gorenje", country: "Словения" },
+  { name: "Whirlpool", country: "США" },
+  { name: "Asko", country: "Швеция" },
+  { name: "Haier", country: "Китай" },
+  { name: "Hisense", country: "Китай" },
+  { name: "Midea", country: "Китай" },
+  { name: "TCL", country: "Китай" },
+  { name: "Bauknecht", country: "Германия" },
+  { name: "Neff", country: "Германия" },
+  { name: "V-ZUG", country: "Швейцария" },
+  { name: "De Dietrich", country: "Франция" },
+  { name: "Smeg", country: "Италия" },
+  { name: "Hoover", country: "Великобритания" },
+  { name: "Daewoo", country: "Корея" },
+  { name: "Sharp", country: "Япония" },
+  { name: "Panasonic", country: "Япония" },
+  { name: "Vestel", country: "Турция" },
+];
+
+const STOVE_BRANDS = [
+  { name: "Bosch", country: "Германия" },
+  { name: "Siemens", country: "Германия" },
+  { name: "Miele", country: "Германия" },
+  { name: "AEG", country: "Германия" },
+  { name: "Neff", country: "Германия" },
+  { name: "Electrolux", country: "Швеция" },
+  { name: "Samsung", country: "Корея" },
+  { name: "LG", country: "Корея" },
+  { name: "Indesit", country: "Италия" },
+  { name: "Ariston", country: "Италия" },
+  { name: "Zanussi", country: "Италия" },
+  { name: "Smeg", country: "Италия" },
+  { name: "Gorenje", country: "Словения" },
+  { name: "Beko", country: "Турция" },
+  { name: "Hansa", country: "Германия" },
+  { name: "Kaiser", country: "Германия" },
+  { name: "Gefest", country: "Беларусь" },
+  { name: "Darina", country: "Россия" },
+  { name: "Lex", country: "Россия" },
+  { name: "Hotpoint", country: "Италия" },
+  { name: "Whirlpool", country: "США" },
+  { name: "De Dietrich", country: "Франция" },
+  { name: "Gaggenau", country: "Германия" },
+  { name: "Kuppersberg", country: "Германия" },
+  { name: "Krona", country: "Россия" },
+  { name: "Haier", country: "Китай" },
+  { name: "Midea", country: "Китай" },
+  { name: "Candy", country: "Италия" },
+  { name: "Pyramida", country: "Германия" },
+  { name: "Electronicsdeluxe", country: "Россия" },
+];
+
+const ALL_BRANDS = {
+  washing: { brands: WASHING_BRANDS, emoji: "🫧", color: "#3B82F6", name: "Стиральные машины" },
+  dishwasher: { brands: DISHWASHER_BRANDS, emoji: "🍽️", color: "#06B6D4", name: "Посудомойки" },
+  oven: { brands: OVEN_BRANDS, emoji: "🔥", color: "#F97316", name: "Духовки" },
+  boiler: { brands: BOILER_BRANDS, emoji: "🌊", color: "#10B981", name: "Бойлеры" },
+  dryer: { brands: DRYER_BRANDS, emoji: "💨", color: "#8B5CF6", name: "Сушилки" },
+  stove: { brands: STOVE_BRANDS, emoji: "🍳", color: "#EF4444", name: "Плиты" },
+};
+
 const APPLIANCES = [
   {
     id: "washing",
@@ -422,43 +596,47 @@ export default function Index() {
             ))}
           </div>
 
-          {/* Бренды стиральных машин */}
-          <div style={{ marginTop: 60 }}>
-            <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 28 }}>
-              <div style={{ width: 44, height: 44, borderRadius: 12, background: "#3B82F615", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 22 }}>🫧</div>
-              <div>
-                <h3 style={{ color: "#111827", fontWeight: 800, fontSize: 20, margin: 0 }}>Стиральные машины</h3>
-                <p style={{ color: "rgba(0,0,0,0.4)", fontSize: 13, margin: 0, fontFamily: "'Inter', sans-serif" }}>30 брендов — ремонтируем все</p>
-              </div>
-            </div>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(160px, 1fr))", gap: 12 }}>
-              {WASHING_BRANDS.map((b, idx) => (
-                <div key={idx}
-                  onClick={() => { setSelectedAppliance("washing"); scroll("issues"); }}
-                  style={{
-                    padding: "14px 18px", borderRadius: 14, cursor: "pointer",
-                    background: "#fff", border: "1px solid rgba(0,0,0,0.08)",
-                    display: "flex", alignItems: "center", justifyContent: "space-between",
-                    transition: "all 0.2s",
-                  }}
-                  onMouseEnter={e => {
-                    (e.currentTarget as HTMLElement).style.borderColor = "#3B82F655";
-                    (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)";
-                    (e.currentTarget as HTMLElement).style.boxShadow = "0 6px 20px rgba(59,130,246,0.12)";
-                  }}
-                  onMouseLeave={e => {
-                    (e.currentTarget as HTMLElement).style.borderColor = "rgba(0,0,0,0.08)";
-                    (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
-                    (e.currentTarget as HTMLElement).style.boxShadow = "none";
-                  }}>
+          {/* Бренды по всем видам техники */}
+          <div style={{ marginTop: 60, display: "flex", flexDirection: "column", gap: 48 }}>
+            {(Object.entries(ALL_BRANDS) as [string, typeof ALL_BRANDS[keyof typeof ALL_BRANDS]][]).map(([id, info]) => (
+              <div key={id}>
+                <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 20 }}>
+                  <div style={{ width: 44, height: 44, borderRadius: 12, background: `${info.color}15`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 22 }}>{info.emoji}</div>
                   <div>
-                    <div style={{ color: "#111827", fontWeight: 700, fontSize: 14 }}>{b.name}</div>
-                    <div style={{ color: "rgba(0,0,0,0.35)", fontSize: 11, fontFamily: "'Inter', sans-serif" }}>{b.country}</div>
+                    <h3 style={{ color: "#111827", fontWeight: 800, fontSize: 18, margin: 0 }}>{info.name}</h3>
+                    <p style={{ color: "rgba(0,0,0,0.4)", fontSize: 13, margin: 0, fontFamily: "'Inter', sans-serif" }}>30 брендов — ремонтируем все</p>
                   </div>
-                  <Icon name="Wrench" size={14} style={{ color: "#3B82F6", flexShrink: 0 }} />
                 </div>
-              ))}
-            </div>
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(160px, 1fr))", gap: 10 }}>
+                  {info.brands.map((b, idx) => (
+                    <div key={idx}
+                      onClick={() => { setSelectedAppliance(id); scroll("issues"); }}
+                      style={{
+                        padding: "12px 16px", borderRadius: 12, cursor: "pointer",
+                        background: "#fff", border: "1px solid rgba(0,0,0,0.08)",
+                        display: "flex", alignItems: "center", justifyContent: "space-between",
+                        transition: "all 0.2s",
+                      }}
+                      onMouseEnter={e => {
+                        (e.currentTarget as HTMLElement).style.borderColor = `${info.color}55`;
+                        (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)";
+                        (e.currentTarget as HTMLElement).style.boxShadow = `0 6px 20px ${info.color}15`;
+                      }}
+                      onMouseLeave={e => {
+                        (e.currentTarget as HTMLElement).style.borderColor = "rgba(0,0,0,0.08)";
+                        (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
+                        (e.currentTarget as HTMLElement).style.boxShadow = "none";
+                      }}>
+                      <div>
+                        <div style={{ color: "#111827", fontWeight: 700, fontSize: 13 }}>{b.name}</div>
+                        <div style={{ color: "rgba(0,0,0,0.35)", fontSize: 11, fontFamily: "'Inter', sans-serif" }}>{b.country}</div>
+                      </div>
+                      <Icon name="Wrench" size={13} style={{ color: info.color, flexShrink: 0 }} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
