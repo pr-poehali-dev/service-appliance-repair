@@ -248,7 +248,7 @@ export default function Index() {
             <span style={{ background: "linear-gradient(135deg, #FF6B35, #FFD166)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Быта</span>
           </h1>
           <p style={{ color: "rgba(0,0,0,0.4)", fontSize: "clamp(15px, 2vw, 20px)", fontWeight: 400, marginTop: 28, fontFamily: "'Inter', sans-serif" }}>
-            Профессиональный ремонт бытовой техники
+            Бытовой помощник по ремонту вашей техники
           </p>
           <button onClick={() => scroll("home")} style={{
             marginTop: 52, padding: "16px 40px", borderRadius: 100, border: "none", cursor: "pointer",
